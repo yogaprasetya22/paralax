@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" class="logo">Mountain</a>
+        <ul>
+            <li><a href="#" class="aktip">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Portofilio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="./img/layar 7.png" alt="background" id="layar6">
+        <img src="./img/Layer 6.png" style="transform  : translateY(70px); " alt="background" id="layar5">
+        <img src="./img/Layer 5.png" style="transform  : translateY(42%);" alt="background" id="layar4">
+        <img src="./img/Layer 4.png" style="transform  : translateY(46%);" alt="background" id="layar3">
+        <h2 id="text">Bouwie</h2>
+        <img src="./img/Layer 3.png" style="transform  : translateY(47%);" alt="background" id="layar2">
+        <img src="./img/Layer 1.png" style="transform  : translateY(100px);" alt="background" id="layar1">
+        <a href="#" id="btn">Explore</a>
+    </section>
+    <div class="sec">
+        <h2>Paralac scrollong effect</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis inventore deserunt distinctio quos. Fugit
+            itaque odio dignissimos, reprehenderit hic placeat mollitia dolore voluptas at praesentium non vel
+            voluptatem quam atque enim cumque blanditiis sint quae deleniti! Ad quam a aperiam, doloribus nobis laborum
+            aliquid saepe fuga nulla consequuntur, suscipit tempora minus reprehenderit esse sunt libero magnam. Maxime
+            nisi iure atque eum nulla quaerat sed, at iste, commodi inventore cumque, sapiente laboriosam et? Impedit
+            exercitationem, aliquam excepturi temporibus quo officiis voluptatum dolore corporis qui sunt obcaecati
+            inventore, minus ut eius? Nisi, doloribus ipsum maxime vitae sapiente eum aliquam voluptate quisquam
+            quibusdam! <br><br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima dolorum officiis porro?
+            Totam molestiae, architecto recusandae impedit error pariatur fugit. Nesciunt dolores exercitationem, ullam
+            unde tempora aliquam harum quam vitae?</p>
+    </div>
+    <script>
+        let btn = document.getElementById('btn')
+        let text = document.getElementById('text')
+        let latar1 = document.getElementById('layar1')
+        let latar2 = document.getElementById('layar2')
+        let latar3 = document.getElementById('layar3')
+        let latar4 = document.getElementById('layar4')
+        let latar5 = document.getElementById('layar5')
+        let latar6 = document.getElementById('layar6')
+        let header = document.getElementById('header')
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+
+            // paralaxx
+
+            text.style.top = 320 + value * 0.08 + 'px';
+            latar1.style.top = value * -0.1 + 'px';
+            latar2.style.top = value * 0.1 + 'px';
+            latar3.style.top = value * 0.2 + 'px';
+            latar4.style.top = value * 0.3 + 'px';
+            latar5.style.top = value * 0.3 + 'px';
+            latar6.style.top = value * 0.4 + 'px';
+        })
+    </script>
+</body>
+
+</html>
